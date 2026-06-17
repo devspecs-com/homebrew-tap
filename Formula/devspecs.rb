@@ -5,21 +5,21 @@
 class Devspecs < Formula
   desc "DevSpecs CLI — index and reference your specs, plans, and ADRs"
   homepage "https://github.com/devspecs-com/devspecs-cli"
-  version "1.0.1"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devspecs-com/devspecs-cli/releases/download/v1.0.1/devspecs_1.0.1_darwin_x86_64.tar.gz"
-      sha256 "dcf4cf9dd001c637c4a198a646f1881a619e89b4ffaea9dfe13d323b8c1d9403"
+      url "https://github.com/devspecs-com/devspecs-cli/releases/download/v1.1.0/devspecs_1.1.0_darwin_x86_64.tar.gz"
+      sha256 "c3c5e9c06a914f0780805f59cf4d4022d8225db6c8dee9866603a0492fa3f65a"
 
       define_method(:install) do
         bin.install "ds"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devspecs-com/devspecs-cli/releases/download/v1.0.1/devspecs_1.0.1_darwin_arm64.tar.gz"
-      sha256 "e720edcff2952606c11649277ef572069eb91e358242b0d438d9b2dfe196cb28"
+      url "https://github.com/devspecs-com/devspecs-cli/releases/download/v1.1.0/devspecs_1.1.0_darwin_arm64.tar.gz"
+      sha256 "8d33f55363b6dc322ad61cd9bba2632fe4a489fa73a9cc95161f44ca93e32a55"
 
       define_method(:install) do
         bin.install "ds"
@@ -29,15 +29,15 @@ class Devspecs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devspecs-com/devspecs-cli/releases/download/v1.0.1/devspecs_1.0.1_linux_x86_64.tar.gz"
-      sha256 "e6410903faaadfd667a678078643d7efcc04426b86de9daf46b5d12260bd79fa"
+      url "https://github.com/devspecs-com/devspecs-cli/releases/download/v1.1.0/devspecs_1.1.0_linux_x86_64.tar.gz"
+      sha256 "173027d89af80dde2f2a8fd3fd23ebaea158598bfdbb861c7e683f6133a1088a"
       define_method(:install) do
         bin.install "ds"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devspecs-com/devspecs-cli/releases/download/v1.0.1/devspecs_1.0.1_linux_arm64.tar.gz"
-      sha256 "aeb577c70448465f6b62872188f7dd0662f25a199d71eb188b9c9a94dd8fe6ec"
+      url "https://github.com/devspecs-com/devspecs-cli/releases/download/v1.1.0/devspecs_1.1.0_linux_arm64.tar.gz"
+      sha256 "49f9aa93dd30c7327cffb020d599cd68561134dcf9a4fee358f22019738bda6b"
       define_method(:install) do
         bin.install "ds"
       end
